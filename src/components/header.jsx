@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import '../index.css';
-import './header.sass';
+import '../styles/header.sass';
 
 class Header extends Component {
     state = {};
+
     render() {
         return (
             <div className="header">
                 <div className="logo headerText">README Designer</div>
-                <button className="settings mr-6 text-m headerText">
-                    Settings
-                </button>
+                <img
+                    src="assets/settings.png"
+                    alt="settings"
+                    className="mr-5 h-10 w-10 opacity-60 hover:opacity-100 cursor-pointer"
+                />
             </div>
         );
     }
